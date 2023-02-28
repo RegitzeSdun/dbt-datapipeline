@@ -1,6 +1,5 @@
-# wawa-dbt
-Wawa data transformation job - transforming data in our bigquery data warehouse
-
+# dbt
+Transforming data in our bigquery data warehouse
 
 Welcome to your new dbt project!
 

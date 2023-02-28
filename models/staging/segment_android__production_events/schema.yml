@@ -1,0 +1,25 @@
+
+version: 2
+
+models:
+    - name: stg_android__community_viewed_article
+      description: "Cleaning legacy article events"
+      columns:
+          - name: slug
+            description: Article slug
+            tests: 
+              - unique
+              - not_null
+          - name: original_timestamp
+            description: Timestamp for when event was fired
+            tests:
+              - unique
+              - not_null
+          - name: category
+            description: Article category
+          - name: user_id 
+            description: Id for user looking at article
+            tests:
+              - unique
+          - name: referrer
+            description: Source where the article was clicked

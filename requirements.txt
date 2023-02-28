@@ -1,0 +1,4 @@
+dbt-synapse==0.19.2
+sqlfluff==0.7.1
+dbt-core 
+dbt-bigquery

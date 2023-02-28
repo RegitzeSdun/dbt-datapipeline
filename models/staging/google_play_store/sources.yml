@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw_google_play__reports
+    tables:
+      - name: p_Store_Performance_traffic_source_raw
+        columns:
+        - name: Date
+        - name: Package_name
+        - name: Traffic_source
+        - name: Search_term
+        - name: UTM_source
+        - name: UTM_campaign
+        - name: Store_listing_acquisitions
+        - name: Store_listing_visitors
+        - name: Store_listing_conversion_rate

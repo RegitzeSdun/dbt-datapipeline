@@ -1,0 +1,35 @@
+version: 2
+
+sources:
+  - name: raw_apple_app_store_connect__reports
+    tables:
+      - name: sales_and_trends_reports
+        columns:
+        - name: Provider
+        - name: Provider_Country
+        - name: SKU
+        - name: Developer
+        - name: Title
+        - name: Version
+        - name: Product_Type_Identifier
+        - name: Units
+        - name: Developer_Proceeds
+        - name: Begin_Date
+        - name: End_Date
+        - name: Customer_Currency
+        - name: Country_Code
+        - name: Currency_of_Proceeds
+        - name: Apple_Identifier
+        - name: Customer_Price
+        - name: Promo_Code
+        - name: Parent_Identifier
+        - name: Subscription
+        - name: Period
+        - name: Category
+        - name: CMB
+        - name: Device
+        - name: Supported_Platforms
+        - name: Proceeds_Reason
+        - name: Preserved_Pricing
+        - name: Client
+        - name: Order_Type

@@ -1,0 +1,29 @@
+version: 2
+
+models:
+    - name: stg_ios__community_viewed_article
+      description: "Cleaning legacy article events"
+      columns:
+          - name: slug
+            description: Article slug
+            tests: 
+              - unique
+              - not_null
+          - name: original_timestamp
+            description: Timestamp for when event was fired
+            tests:
+              - unique
+              - not_null
+          - name: category
+            description: Article category
+          - name: user_id 
+            description: Id for user looking at article
+            tests:
+              - unique
+              - not_null
+          - name: reading_session
+            description: Reading_session - variable is not 100p trustworthfy
+          - name: clinic_id
+            description: Id for clinic if the article is linked to a clinic
+          - name: referrer
+            description: Source where the article was clicked

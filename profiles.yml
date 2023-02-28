@@ -1,0 +1,22 @@
+local_playground:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: wawa-83630
+      schema: dbt_rsdun
+      threads: 2
+      keyfile: dbt-service-account.json
+
+wawa_analytics:
+  target: prod
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: wawa-83630
+      schema: wawa_analytics
+      threads: 2
+      keyfile: dbt-service-account.json
+

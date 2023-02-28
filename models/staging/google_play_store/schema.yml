@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+    - name: stg_google_play_store__downloads
+      description: "Extracting store listing acqusitions per day from google play reports"
+      columns:
+          - name: date
+            description: Date for downloads
+            tests:
+              - unique
+              - not_null
+          - name: downloads
+            description: Number of android downloads

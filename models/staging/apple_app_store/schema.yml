@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+    - name: stg_apple_app_store__downloads
+      description: "Extracting apple downloads from apple store connect reports"
+      columns:
+          - name: date
+            description: Date for downloads
+            tests:
+              - unique
+              - not_null
+          - name: downloads
+            description: Number of apple downloads

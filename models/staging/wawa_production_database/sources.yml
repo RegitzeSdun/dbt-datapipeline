@@ -1,0 +1,28 @@
+version: 2
+
+sources:
+  - name: raw_airbyte__wawa_production_database
+    tables:
+      - name: community_article
+        columns:
+        - name: id
+        - name: slug
+        - name: category
+        - name: sanity_id
+        - name: created_at
+        - name: deleted_at
+        - name: updated_at
+        - name: published_at
+        - name: _airbyte_ab_id
+        - name: _airbyte_emitted_at
+        - name: _airbyte_normalized_at
+        - name: _airbyte_community_article_hashid
+        - name: _airbyte_unique_key
+      - name: wawa_user
+        columns:
+        - name: id
+        - name: emailß
+        - name: given_name
+        - name: family_name
+        - name: firebase_id
+        - name: firebase_project_id

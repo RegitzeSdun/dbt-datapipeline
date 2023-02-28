@@ -1,0 +1,36 @@
+
+version: 2
+
+models:
+    - name: downloads
+      description: "Combined model for google and apple downloads"
+      columns:
+          - name: download_date
+            description: Date for downloads
+            tests:
+              - unique
+              - not_null
+          - name: apple_downloads
+            description: Number of apple downloads
+          - name: google_downloads
+            description: Number of google downloads
+          - name: total_downloads
+            description: Sum of apple and google downloads
+            tests:
+              - not_null
+    - name: articles_evidence
+      columns:
+          - name: slug
+            description: slug for the article
+          - name: original_timestamp
+            description: Date for event - an event can be performed by a user at the same time
+            tests:
+              - not_null
+          - name: category
+            description: Category of article - can be null if article hasn't been assigned a category
+          - name: user_id
+            description: Id for user viewing the article
+          - name: referrer
+            description: where the article was clicked i.e. within community, home etc. Can be null as the definition of referrer has changed overtime
+          - name: article_id
+            description: id for article - this one is backfilled based on the slug, and since the slug can change some null values will appear here
